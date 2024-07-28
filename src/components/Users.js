@@ -25,7 +25,7 @@ const Users = () => {
   };
 
   const handleAddUser = () => {
-    dispatch(addUserRequest({...userForm,id:+Math.random()}));
+    dispatch(addUserRequest({...userForm,id:users.length+1}));
     setUserForm({ id: '', name: '', email: '' });
   };
   const handleUpdateUser = () => {
